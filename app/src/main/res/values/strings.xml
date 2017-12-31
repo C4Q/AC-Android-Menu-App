@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MenuAppTest</string>
+    <string name="app_name">MenuApp</string>
     <string name="help_text">Help</string>
     <string name="title_activity_settings">Settings</string>
 

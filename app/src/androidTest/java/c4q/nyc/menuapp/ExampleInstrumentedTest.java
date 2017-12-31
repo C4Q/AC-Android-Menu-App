@@ -1,4 +1,4 @@
-package c4q.nyc.menuapptest;
+package c4q.nyc.menuapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("c4q.nyc.menuapptest", appContext.getPackageName());
+        assertEquals("c4q.nyc.menuapp", appContext.getPackageName());
     }
 }

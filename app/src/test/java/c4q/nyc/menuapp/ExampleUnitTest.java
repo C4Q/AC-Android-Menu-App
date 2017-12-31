@@ -1,4 +1,4 @@
-package c4q.nyc.menuapptest;
+package c4q.nyc.menuapp;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package c4q.nyc.menuapptest;
+package c4q.nyc.menuapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

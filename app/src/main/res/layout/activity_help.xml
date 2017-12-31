@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="c4q.nyc.menuapptest.HelpActivity">
+    tools:context="c4q.nyc.menuapp.HelpActivity">
 
 </android.support.constraint.ConstraintLayout>
