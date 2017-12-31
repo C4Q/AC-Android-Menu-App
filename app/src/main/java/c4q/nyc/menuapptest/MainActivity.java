@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 
@@ -54,15 +55,15 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
             case R.id.item:
-                Log.e(TAG, "Search was clicked");
+                Toast.makeText(this, "Options Menu: Item was clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.help:
-                Log.e(TAG, "Help was clicked");
+                Toast.makeText(this, "Options Menu: Help was clicked", Toast.LENGTH_SHORT).show();
                 Intent helpIntent = new Intent(this, HelpActivity.class);
                 startActivity(helpIntent);
                 break;
             default:
-                Log.e(TAG, "Some other button was clicked");
+                Toast.makeText(this, "Options Menu: Some menu button was clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
         return true;
@@ -92,15 +93,15 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     public boolean onContextItemSelected(MenuItem item) {
         switch(item.getItemId()) {
             case R.id.item:
-                Log.e(TAG, "Search was clicked");
+                Toast.makeText(this, "Context Menu: Item was clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.help:
-                Log.e(TAG, "Help was clicked");
+                Toast.makeText(this, "Context Menu: Help was clicked", Toast.LENGTH_SHORT).show();
                 Intent helpIntent = new Intent(this, HelpActivity.class);
                 startActivity(helpIntent);
                 break;
             default:
-                Log.e(TAG, "Some other button was clicked");
+                Toast.makeText(this, "Context Menu: Some menu button was clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
         return true;
@@ -108,6 +109,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
 
     /**
      * Called to create a popup menu.
+     * OnClickHandler for popup button in activity_main.xml
      * @param v
      */
     public void onCreatePopupMenu(View v) {
@@ -127,15 +129,15 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     public boolean onMenuItemClick(MenuItem item) {
         switch(item.getItemId()) {
             case R.id.item:
-                Log.e(TAG, "Search was clicked");
+                Toast.makeText(this, "Popup Menu: Item was clicked", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.help:
-                Log.e(TAG, "Help was clicked");
+                Toast.makeText(this, "Popup Menu: Help was clicked", Toast.LENGTH_SHORT).show();
                 Intent helpIntent = new Intent(this, HelpActivity.class);
                 startActivity(helpIntent);
                 break;
             default:
-                Log.e(TAG, "Some other button was clicked");
+                Toast.makeText(this, "Popup Menu: Some menu button was clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
         return true;
